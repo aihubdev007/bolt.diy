@@ -139,8 +139,13 @@ ${props.summary}
 
   logger.info(`Sending llm call to ${provider.name} with model ${modelDetails.name}`);
 
-  // console.log(systemPrompt,processedMessages);
+  console.log('========🔔 系统提示词=========')
+  console.log(systemPrompt);
+  console.log('========🔔 已处理消息=========')
+  console.log(processedMessages);
+  console.log('=================')
 
+  
   return await _streamText({
     model: provider.getModelInstance({
       model: modelDetails.name,
