@@ -33,6 +33,17 @@ async function llmCallAction({ context, request }: ActionFunctionArgs) {
     streamOutput?: boolean;
   }>();
 
+  console.log('+++++++++++++++++++++')
+  console.log(system)
+  console.log('+++++++++++++++++++++')
+  console.log(message)
+  console.log('+++++++++++++++++++++')
+  console.log(model)
+  console.log('+++++++++++++++++++++')
+  console.log(provider)
+  console.log('+++++++++++++++++++++')
+  console.log(streamOutput)
+
   const { name: providerName } = provider;
 
   // validate 'model' and 'provider' fields
